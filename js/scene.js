@@ -353,6 +353,11 @@ function updateLeePosition(){
 		if (typeof(scene.getObjectByName('lee')) == 'undefined') {
 			console.log("Undefined lee;)");
 		} else {
+			if (	scene.getObjectByName('lee').position.x >= 99){
+				stopObject = true;
+				canStop = true;
+				died = true;
+			}
 			checkArea();
 			checkInvisible();
 			if (stopObject == true && canStop ==true && died == false){
