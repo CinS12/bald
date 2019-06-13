@@ -1,0 +1,34 @@
+#message {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	color: red;
+	font-size: 80px;
+	text-align: center;
+	z-index: 100;
+	display:block;
+}
+
+#lives {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 100%;
+	color: green;
+	font-size: 70px;
+	text-align: right;
+	z-index: 100;
+	display:block;
+}
+
+#level {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 100%;
+	color: blue;
+	font-size: 70px;
+	text-align: left;
+	z-index: 100;
+	display:block;
+}
