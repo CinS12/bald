@@ -3,7 +3,7 @@
 	top: 10px;
 	width: 100%;
 	color: red;
-	font-size: 50%;
+	font-size: 50px;
 	text-align: center;
 	z-index: 100;
 	display:block;
@@ -15,7 +15,7 @@
 	right: 20px;
 	width: 100%;
 	color: green;
-	font-size: 70px;
+	font-size: 50px;
 	text-align: right;
 	z-index: 100;
 	display:block;
@@ -27,7 +27,7 @@
 	left: 20px;
 	width: 100%;
 	color: blue;
-	font-size: 70px;
+	font-size: 50px;
 	text-align: left;
 	z-index: 100;
 	display:block;
