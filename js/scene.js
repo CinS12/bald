@@ -7,7 +7,7 @@ var camera;
 var stopObject=false;
 var canStop = false;
 var invisible = false;
-var lvl = 1;
+var lvl = 9;
 var start = false;
 var died = false;
 var lives = 3;
@@ -379,31 +379,31 @@ function updateLeePosition(){
 						scene.getObjectByName("plane_lvl_1").visible = true;
 						scene.getObjectByName("plane_lvl_2").visible = false;
 						scene.getObjectByName("plane_lvl_3").visible = false;
-						scene.getObjectByName('lee').position.x += 0.3;
+						scene.getObjectByName('lee').position.x += 0.4;
 						break;
 					case 2:
 						scene.getObjectByName("plane_lvl_1").visible = true;
 						scene.getObjectByName("plane_lvl_2").visible = false;
 						scene.getObjectByName("plane_lvl_3").visible = false;
-						scene.getObjectByName('lee').position.x += 0.5;
+						scene.getObjectByName('lee').position.x += 0.6;
 						break;
 					case 3:
 						scene.getObjectByName("plane_lvl_1").visible = true;
 						scene.getObjectByName("plane_lvl_2").visible = false;
 						scene.getObjectByName("plane_lvl_3").visible = false;
-						scene.getObjectByName('lee').position.x += 0.7;
+						scene.getObjectByName('lee').position.x += 0.8;
 						break;
 					case 4:
 						scene.getObjectByName("plane_lvl_1").visible = false;
 						scene.getObjectByName("plane_lvl_2").visible = true;
 						scene.getObjectByName("plane_lvl_3").visible = false;
-						scene.getObjectByName('lee').position.x += 0.4;
+						scene.getObjectByName('lee').position.x += 0.5;
 						break;
 					case 5:
 						scene.getObjectByName("plane_lvl_1").visible = false;
 						scene.getObjectByName("plane_lvl_2").visible = true;
 						scene.getObjectByName("plane_lvl_3").visible = false;
-						scene.getObjectByName('lee').position.x += 0.6;
+						scene.getObjectByName('lee').position.x += 0.7;
 						break;
 					case 6:
 						scene.getObjectByName("plane_lvl_1").visible = false;
@@ -421,7 +421,7 @@ function updateLeePosition(){
 						scene.getObjectByName("plane_lvl_1").visible = false;
 						scene.getObjectByName("plane_lvl_2").visible = false;
 						scene.getObjectByName("plane_lvl_3").visible = true;
-						scene.getObjectByName('lee').position.x += 0.6;
+						scene.getObjectByName('lee').position.x += 0.7;
 						break;
 					case 9:
 						scene.getObjectByName("plane_lvl_1").visible = false;
@@ -433,7 +433,7 @@ function updateLeePosition(){
 						scene.getObjectByName("plane_lvl_1").visible = false;
 						scene.getObjectByName("plane_lvl_2").visible = false;
 						scene.getObjectByName("plane_lvl_3").visible = true;
-						scene.getObjectByName('lee').position.x += 1;
+						scene.getObjectByName('lee').position.x += 1.2;
 						break;
 					case 11:
 						printMessage();
@@ -472,7 +472,7 @@ function printLevel(){
 		if (lvl < 11){
 			document.getElementById('level').innerHTML = "Level: "+lvl+"/10";
 		} else {
-			document.getElementById('level').innerHTML = "Level: 10";
+			document.getElementById('level').innerHTML = "Level: 10/10";
 		}
 }
 
