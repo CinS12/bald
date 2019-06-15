@@ -298,6 +298,7 @@ function skyBox(){
 	//material_sky.map = THREE.ImageUtils.loadTexture('assets/earth/prova1.png');
 	material_sky.side = THREE.BackSide;
 	var skybox = new THREE.Mesh(mesh_sky, material_sky);
+	skybox.name = "sky";
 	scene.add(skybox);
 }
 
@@ -331,8 +332,18 @@ function render(){
 	checkStop();
 	printLevel();
 	printLives();
+	updateSky();
 	renderer.render(scene,camera);
 	requestAnimationFrame(render);
+}
+
+function updateSky(){
+	if (typeof(scene.getObjectByName('lee')) == 'undefined') {
+		console.log("Undefined sky;)");
+	} else {
+		scene.getObjectByName('sky').rotation.x += 0.0002;
+		scene.getObjectByName('sky').rotation.y += 0.0003;
+	}
 }
 
 function getLeePosition(){
@@ -459,7 +470,7 @@ function printLives(){
 }
 function printLevel(){
 		if (lvl < 11){
-			document.getElementById('level').innerHTML = "Level: "+lvl;
+			document.getElementById('level').innerHTML = "Level: "+lvl+"/10";
 		} else {
 			document.getElementById('level').innerHTML = "Level: 10";
 		}
