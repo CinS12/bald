@@ -7,7 +7,7 @@ var camera;
 var stopObject=false;
 var canStop = false;
 var invisible = false;
-var lvl = 9;
+var lvl = 1;
 var start = false;
 var died = false;
 var lives = 3;
